@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bella Hair - Química Capilar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    header {
+      background-color: #000;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #FFD700;
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #FFD700;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                  url('assets/hero-sample.jpg') center/cover;
+      color: #FFD700;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+      font-family: 'Georgia', serif;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      color: #FFD700;
+      margin-bottom: 40px;
+      font-family: 'Georgia', serif;
+    }
+
+    .services, .gallery, .comments, .works {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #111;
+      padding: 20px;
+      border: 1px solid #FFD700;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .gallery img, .works img {
+      width: 100%;
+      border-radius: 10px;
+      border: 2px solid #FFD700;
+    }
+
+    .comment {
+      background: #111;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #FFD700;
+      font-style: italic;
+    }
+
+    .comment span {
+      display: block;
+      margin-top: 10px;
+      text-align: right;
+      font-style: normal;
+      color: #FFD700;
+    }
+
+    .contact {
+      text-align: center;
+      background: #111;
+      padding: 40px 20px;
+      border-top: 1px solid #FFD700;
+    }
+
+    .contact p {
+      margin: 8px 0;
+    }
+
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+      color: #888;
+      border-top: 1px solid #FFD700;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="assets/logo.png" alt="Logo Bella Hair">
+    <nav>
+      <a href="#servicos">Serviços</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#comentarios">Comentários</a>
+      <a href="#trabalhos">Trabalhos Recentes</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Bella Hair</h1>
+    <p>Transformando seu cabelo com luxo e sofisticação ✨</p>
+  </div>
+
+  <section id="servicos">
+    <h2>Serviços</h2>
+    <div class="services">
+      <div class="card">Escova Progressiva</div>
+      <div class="card">Selagem</div>
+      <div class="card">Botox Capilar</div>
+      <div class="card">Coloração</div>
+      <div class="card">Luzes</div>
+      <div class="card">Banho de Brilho</div>
+      <div class="card">Cauterização</div>
+      <div class="card">Reconstrução</div>
+      <div class="card">Hidratação</div>
+    </div>
+  </section>
+
+  <section id="galeria">
+    <h2>Galeria</h2>
+    <div class="gallery">
+      <img src="assets/work1.jpg" alt="Trabalho 1">
+      <img src="assets/work2.jpg" alt="Trabalho 2">
+      <img src="assets/work3.jpg" alt="Trabalho 3">
+    </div>
+  </section>
+
+  <section id="comentarios">
+    <h2>Comentários das Clientes</h2>
+    <div class="comments">
+      <div class="comment">
+        "Excelente atendimento, meu cabelo ficou maravilhoso!"
+        <span>- Ana Paula</span>
+      </div>
+      <div class="comment">
+        "Serviço impecável, recomendo muito."
+        <span>- Juliana</span>
+      </div>
+      <div class="comment">
+        "Saí do salão me sentindo renovada!"
+        <span>- Camila</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="trabalhos">
+    <h2>Trabalhos Recentes</h2>
+    <div class="works">
+      <div class="card">
+        <img src="assets/work1.jpg" alt="Trabalho 1">
+        <h3>Transformação Loiro</h3>
+        <p>Antes e depois incrível com luzes platinadas.</p>
+      </div>
+      <div class="card">
+        <img src="assets/work2.jpg" alt="Trabalho 2">
+        <h3>Selagem Capilar</h3>
+        <p>Fios alinhados, sedosos e com muito brilho.</p>
+      </div>
+      <div class="card">
+        <img src="assets/work3.jpg" alt="Trabalho 3">
+        <h3>Coloração Vermelha</h3>
+        <p>Cor intensa e cheia de personalidade.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="contact">
+    <h2>Contato</h2>
+    <p>📞 Telefone: (92) 995329733</p>
+    <p>📍 Localização: Raimundo Bentes de Jesus , 1296 - Parintins, AM</p>
+  </section>
+
+  <footer>
+    © 2025 Bella Hair - Química Capilar. Todos os direitos reservados.
+  </footer>
+</body>
+</html>
